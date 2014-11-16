@@ -1,0 +1,10 @@
+body { padding-top: 55px; }
+
+#ct { padding-top: 30px; }
+
+h1 { font-weight: normal; line-height: 0.875; margin-bottom: 15px; text-transform: uppercase; }
+h1 span { display: block; font-size: 20px; line-height: 1.25; }
+
+#empLogin, #forgotPassword { margin: 0 auto; width: 460px; }
+#empLogin legend, #empLogin label, #forgotPassword legend, #forgotPassword label { text-transform: uppercase; }
+#empLogin .btn, #forgotPassword .btn { float: right; }

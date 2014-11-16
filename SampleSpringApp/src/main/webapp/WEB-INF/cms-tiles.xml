@@ -1,0 +1,28 @@
+	<!--?xml version="1.0" encoding="UTF-8"? -->
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/common/baselayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="media" value="/WEB-INF/jsp/common/media.jsp" />
+        <put-attribute name="header" value="/WEB-INF/jsp/common/header.jsp" />
+		<put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/common/footer.jsp" />
+	</definition>
+   <!-- retail login -->
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="MyApp Login" />
+		<put-attribute name="media" value="/WEB-INF/jsp/customer/media.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/customer/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/customer/login.jsp" />
+	</definition>
+	<!-- retail logout -->
+	<definition name="logout" extends="base.definition">
+		<put-attribute name="title" value="MyApp Login" />
+		<put-attribute name="media" value="/WEB-INF/jsp/customer/media.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/customer/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/customer/logout.jsp" />
+	</definition>
+</tiles-definitions>
